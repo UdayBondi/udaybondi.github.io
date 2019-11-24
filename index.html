@@ -73,9 +73,10 @@
                 function sketch_stop() {
                   document.getElementById('dpzlearn_image').style.opacity = "0";
                 }
-                dpzlearn_stop()
+                sketch_stop()
               </script>
             </td>
+
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://www.sciencedirect.com/science/article/pii/S0097849318300761">
                 <papertitle>A Delaunay triangulation based approach for cleaning rough sketches</papertitle>
@@ -94,26 +95,21 @@
             </td>
           </tr>
 
-
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="sketch_stop()" onmouseover="sketch_start()">
+          <tr onmouseout="shade_stop()" onmouseover="shade_start()">
             <td style="padding:5px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='shade_image'><img style="width:100%;max-width:100%" src='images/cam_shaded1.png'></div>
                 <img style="width:100%;max-width:100%" src='images/cam_sketch.png'>
               </div>
               <script type="text/javascript">
-                function sketch_start() {
+                function shade_start() {
                   document.getElementById('shade_image').style.opacity = "1";
                 }
 
-                function sketch_stop() {
+                function shade_stop() {
                   document.getElementById('shade_image').style.opacity = "0";
                 }
-                dpzlearn_stop()
+                shade_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -131,6 +127,37 @@
             </td>
           </tr>
 
+          <tr onmouseout="stroke_stop()" onmouseover="stroke_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='stroke_image'><img style="width:100%;max-width:100%" src='images/label_lesion.png'></div>
+                <img style="width:100%;max-width:100%" src='images/orig_lesion.png'>
+              </div>
+              <script type="text/javascript">
+                function stroke_start() {
+                  document.getElementById('stroke_image').style.opacity = "1";
+                }
+
+                function stroke_stop() {
+                  document.getElementById('stroke_image').style.opacity = "0";
+                }
+                stroke_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.biorxiv.org/content/10.1101/661132v1">
+                <papertitle>Parallel Capsule Net for Ischemic Stroke Segmentation</papertitle>
+              </a>
+              <br>
+              
+              MD Sharique, 
+              <strong>Uday Bondi Pundarikaksha</strong>, Pradeeba Sridar, R S Ramakrishnan, R Krishnakumar
+              <br>
+              Pre-print on bioRxiv
+              <p></p>
+              <p>A novel neural network architecture, Parallel Capsule Net (PCN) for segmentation of Ischemic Stroke.</p>
+            </td>
+          </tr>
 
         </tbody></table>
 
